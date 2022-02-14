@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Michele Monaco</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9c2a3babd5.js" crossorigin="anonymous"></script>
+
+   <style>
+
+    @keyframes fading {
+      100% {
+          opacity: 1;
+          filter: blur(0);
+      }
+    }
+
+    span {
+      opacity: 0;
+      filter: blur(5px);
+    }
+
+    .enter-button {
+      opacity: 0;
+    }
+
+    span:nth-child(1) {
+        animation: fading 0.8s 0.3s forwards ease-in;
+    }
+
+    span:nth-child(2) {
+        animation: fading 0.8s 0.4s forwards ease-in;
+    }
+
+    span:nth-child(3) {
+        animation: fading 0.8s 0.5s forwards ease-in;
+    }
+
+    span:nth-child(4) {
+        animation: fading 0.8s 0.6s forwards ease-in;
+    }
+    span:nth-child(5) {
+        animation: fading 0.8s 0.7s forwards ease-in;
+    }
+
+    span:nth-child(6) {
+        animation: fading 0.8s 0.8s forwards ease-in;
+    }
+
+    /*the enter button will appear shortly after the text */
+
+    .enter-button {
+      animation: fading 0.8s 1s forwards ease-in;
+    }
+
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+    }
+
+
+   </style>
+  </head>
+
+  <body>
+    <div class="frontpage-title">
+      <div class="name" style="text-align:center">
+        <span>Michele</span>
+        <span>Monaco</span>
+      </div>
+      <div class="frontpage-description" style="text-align:center">
+        <span>junior</span>
+        <span>full</span>
+        <span>stack</span>
+        <span>developer</span>
+      </div>
+    </div>
+    <div class="enter-button">
+      <a class="btn btn-light btn-md" href="homepage.html" role="button">Enter my website</a>
+    </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  </body>
+</html>

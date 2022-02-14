@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Michele Monaco</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9c2a3babd5.js" crossorigin="anonymous"></script>
+    <style>
+
+     body {
+      opacity: 0;
+      filter: blur(5px);
+      background-color: black;
+      animation: fading 0.5s 0.3s forwards ease-in;
+    }
+
+    @keyframes fading {
+      100% {
+          opacity: 1;
+          filter: blur(0);
+      }
+    }
+
+    @keyframes mymove {
+      50% {
+        box-shadow: 10px 20px 30px gray;
+      }
+    }
+
+    </style>
+
+
+
+  </head>
+
+  <body>
+    <!-- navigation bar -->
+    <nav class="navbar p-0 navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand" style="color:#cccccc; font-size: 20px; margin-left: 15px">Michele Monaco</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="homepage.html">Homepage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="work.html">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- work section  -->
+    <div class="container-sm my-5" id='work' style="max-width: 900px;">
+      <div class="container-sm mb-5 p-3 work-section">
+        <h3>Dai un'occhiata ai miei progetti!</h3>
+        <p>Grazie ai miei studi universitari ho sviluppato buone capacità di organizzazione,
+          mentre le mie esperienze professionali mi hanno permesso di avere un'occhio attento alle
+          richieste del cliente, qualità che trovo molto utili nella programmazione.
+          Per ora, questi sono i linguaggi che conosco, ma si aggiorneranno in continuazione!</p>
+        <ul style="padding-left:10px">
+          <li><i class="fab fa-html5"></i><span style="margin-left:5px">HTML</span></li>
+          <li><i class="fab fa-css3-alt"></i><span style='margin-left:5px'>CSS</span></li>
+          </ul>
+      </div>
+      <div class="container-sm mb-5 p-3 work-section">
+        <p>Non ho ancora progetti da mostrarti oltre a questo sito, ma non
+           temere, presto inizierà a riempirsi! </p>
+        <img src="assets/images/meme.jpg" alt="meme" class="rounded" style="max-width:200px; margin:10px;">
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+    </script>
+
+  </body>
+
+</html>

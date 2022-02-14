@@ -1,0 +1,235 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Caveat', cursive;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+/* INDEX */
+.frontpage-title {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.frontpage-title .name {
+  font-size: 300%;
+}
+
+.frontpage-description {
+  font-size: 200%;
+  color: white;
+}
+
+.enter-button {
+  position: fixed;
+  bottom: 15%;
+}
+
+.enter-button a:hover {
+  background-color: #4d4d4d;
+  text-decoration: none;
+  color: white;
+}
+
+/*HOMEPAGE */
+/* NAVIGATION BAR */
+nav ul {
+  margin-left: 20px;
+}
+
+nav li {
+  margin: 0 auto;
+  padding: 3px;
+}
+
+nav li:hover {
+  background-color: #606060;
+  color: white;
+}
+
+/*INTRODUCTION AND DESCRIPTION*/
+.introduction {
+  color: white;
+  -webkit-filter: drop-shadow(16px 16px 10px gray);
+          filter: drop-shadow(16px 16px 10px gray);
+}
+
+.introduction h1 {
+  font-weight: 700;
+  font-size: 3em;
+}
+
+.introduction p {
+  font-size: 1.8em;
+}
+
+.photo-one, .photo-two, .photo-three {
+  max-width: 300px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.photo-one:hover,
+.photo-two:hover,
+.photo-three:hover {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.description {
+  border-radius: 15px;
+  background-color: #C0C0C0;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#737373), to(#ffc0cb));
+  background-image: linear-gradient(to bottom right, #737373, #ffc0cb);
+  border: 2px solid white;
+  -webkit-animation: mymove 5s infinite;
+          animation: mymove 5s infinite;
+}
+
+.description h3 {
+  font-weight: 700;
+  font-size: 1.8em;
+}
+
+.description h2 {
+  font-weight: 600;
+  font-size: 1.6em;
+}
+
+/*WORK PAGE*/
+.work-section {
+  background-color: #C0C0C0;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#737373), to(#ffc0cb));
+  background-image: linear-gradient(to bottom right, #737373, #ffc0cb);
+  border-radius: 15px;
+  border: 2px solid white;
+  -webkit-animation: mymove 5s infinite;
+          animation: mymove 5s infinite;
+}
+
+.work-section h3 {
+  font-weight: 700;
+  font-size: 1.8em;
+}
+
+.work-section ul {
+  list-style-type: none;
+}
+
+/*CONTACT PAGE */
+.footer,
+.form {
+  background-color: #C0C0C0;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, right bottom, from(gray), to(pink));
+  background-image: linear-gradient(to bottom right, gray, pink);
+  border-radius: 15px;
+  border: 2px solid white;
+  -webkit-animation: mymove 5s infinite;
+          animation: mymove 5s infinite;
+}
+
+.footer-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-title h3 {
+  font-weight: 700;
+  font-size: 1.8em;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid black;
+}
+
+.social-media-addresses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.icons a {
+  color: black;
+  text-decoration: none;
+  padding: 0 1px 0 1px;
+}
+
+.icons a:hover {
+  color: #868686;
+}
+
+.form {
+  text-align: center;
+}
+
+.form-group {
+  max-width: 300px;
+}
+
+.form-control {
+  margin-top: 5px;
+}
+
+.submit {
+  padding: 3px;
+}
+
+.submit button:hover {
+  background-color: #606060;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  /*i prefer so the text lines aren't too short and the text can expand a little more */
+  body {
+    font-size: 1em;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  /*this way i put the second photo after the description, to crate more contrast */
+  .photo-two {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  /*the same as before */
+  .photo-two {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
