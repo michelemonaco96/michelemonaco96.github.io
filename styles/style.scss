@@ -4,16 +4,13 @@
   box-sizing: border-box;
 }
 
-
 body {
-    font-family: 'Caveat', cursive;
-    font-weight: bold;
-    font-size: 1.4em;
+  font-family: "Caveat", cursive;
+  font-weight: bold;
+  font-size: 1.4em;
 }
 
-
-
-                /* INDEX */
+/* INDEX */
 
 .frontpage-title {
   color: white;
@@ -21,7 +18,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
 
 .frontpage-title .name {
@@ -31,7 +27,7 @@ body {
 .frontpage-description {
   font-size: 200%;
   color: white;
-  }
+}
 
 .enter-button {
   position: fixed;
@@ -44,8 +40,7 @@ body {
   color: white;
 }
 
-
-                       /*HOMEPAGE */
+/*HOMEPAGE */
 
 /* NAVIGATION BAR */
 
@@ -61,54 +56,46 @@ nav li:hover {
   color: white;
 }
 
-
 /*INTRODUCTION AND DESCRIPTION*/
 .introduction {
   color: white;
   filter: drop-shadow(16px 16px 10px gray);
-
-
 }
 .introduction h1 {
- font-weight: 700;
- font-size: 3em;
+  font-weight: 700;
+  font-size: 3em;
 }
 
 .introduction p {
   font-size: 1.8em;
 }
 
-
-
-.photo-one, .photo-two, .photo-three {
+.photo-one,
+.photo-two,
+.photo-three {
   max-width: 300px;
   order: 1;
-
 }
 
 .photo-one:hover,
 .photo-two:hover,
 .photo-three:hover {
-    transform: translateY(-20px);
-    transform: scale(1.2);
-    transition: 1s;
-  }
-
+  transform: translateY(-20px);
+  transform: scale(1.2);
+  transition: 1s;
+}
 
 .description {
   border-radius: 15px;
-  background-color: 	#C0C0C0; /* For browsers that do not support gradients */
-  background-image: linear-gradient(to bottom right,#737373, #ffc0cb);
+  background-color: #c0c0c0; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, #737373, #ffc0cb);
   border: 2px solid white;
   animation: mymove 5s infinite;
-
 }
 
-
-
 .description h3 {
- font-weight: 700;
- font-size: 1.8em;
+  font-weight: 700;
+  font-size: 1.8em;
 }
 
 .description h2 {
@@ -118,37 +105,32 @@ nav li:hover {
 
 /*WORK PAGE*/
 .work-section {
-  background-color: 	#C0C0C0; /* For browsers that do not support gradients */
+  background-color: #c0c0c0; /* For browsers that do not support gradients */
   background-image: linear-gradient(to bottom right, #737373, #ffc0cb);
   border-radius: 15px;
   border: 2px solid white;
   animation: mymove 5s infinite;
-
 }
 
 .work-section h3 {
-    font-weight: 700;
-    font-size: 1.8em;
-
+  font-weight: 700;
+  font-size: 1.8em;
 }
 
 .work-section ul {
   list-style-type: none;
 }
 
-
 /*CONTACT PAGE */
 
 .footer,
 .form {
-  background-color: 	#C0C0C0; /* For browsers that do not support gradients */
+  background-color: #c0c0c0; /* For browsers that do not support gradients */
   background-image: linear-gradient(to bottom right, gray, pink);
   border-radius: 15px;
   border: 2px solid white;
   animation: mymove 5s infinite;
-
 }
-
 
 .footer-title {
   display: flex;
@@ -163,15 +145,10 @@ nav li:hover {
   border-bottom: 2px solid black;
 }
 
-
-
-
 .social-media-addresses {
   display: flex;
   justify-content: center;
 }
-
-
 
 .icons a {
   color: black;
@@ -183,7 +160,6 @@ nav li:hover {
   color: #868686;
 }
 
-
 .form {
   text-align: center;
 }
@@ -193,20 +169,16 @@ nav li:hover {
 }
 
 .form-control {
-  margin-top: 5px,
+  margin-top: 5px;
 }
 
 .submit {
   padding: 3px;
-
 }
 
 .submit button:hover {
   background-color: #606060;
 }
-
-
-
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
@@ -216,11 +188,10 @@ nav li:hover {
   }
 }
 
-
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   /*this way i put the second photo after the description, to crate more contrast */
-   .photo-two {
+  .photo-two {
     order: 0;
   }
 }
@@ -228,8 +199,7 @@ nav li:hover {
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
   /*the same as before */
-   .photo-two {
+  .photo-two {
     order: 0;
   }
-
 }
